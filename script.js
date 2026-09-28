@@ -1,0 +1,1 @@
+const n=document.querySelector('.nav');addEventListener('scroll',()=>n.classList.toggle('scrolled',scrollY>30));const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
